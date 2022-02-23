@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ionic-demo-6d1c1": {
+      "hosting": {
+        "app": [
+          "ionic-demo-6d1c1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ionic-demo-6d1c1"
+  }
+}
