@@ -24,7 +24,7 @@ export class AvatarService {
   async uploadImage(cameraFile: Photo) {
     const user = this.auth.currentUser;
     const path = `uploads/${user.uid}/profile.png`;
-    const storageRef = ref(this.storage);
+    const storageRef = ref(this.storage, path);
 
     try {
       await uploadString(storageRef, cameraFile.base64String, 'base64');

@@ -21,6 +21,7 @@ export class HomePage {
   ) {
     this.avatarService.getUserProfile().subscribe((data) => {
       this.profile = data;
+      console.log('profile', this.profile);
     })
   }
 
